@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* CSS Document */
+/* Sitewide styles */
 @font-face {
     font-family: 'Roman_';
     src: url('font/roman.eot');
@@ -14,7 +14,23 @@ html{
 	background:#4d85c5;
 	font-family:Roman_;
 }
-body{ font-family:Roman_;}
+body{ 
+	font-family:Roman_;
+	color:#292929;
+}
+.hidden{
+	visibility:hidden;
+	display:none;
+}
+ul {
+	margin: 25px 0 0 0;
+	padding: 0;
+
+}
+li{
+	list-style:none;
+	
+}
 h1, h2, p{
 	margin:0;
 	font-family:Roman_;
@@ -31,21 +47,27 @@ p.space{
 	padding: 30px 0 0 0;
 	font-size:22px;
 }
-#wrap{
+#wrapper{
 	
-	width:960px;
+	width: 872px;
 	margin:0 auto;
 }
+.center{
+	text-align:center;
+}
+
+/* main card*/
+
 #main-card {
-	margin: 25px auto;
-	width: 872px;
+	margin: 25px auto 0 auto;
+
 }
 #main-card-top{
 	background:url(img/main-card-top.jpg) no-repeat;
 	width:872px;
 	height:43px;
 }
-#main-card-content{
+#content{
 	background:url(img/main-card-bg.jpg) repeat-y;
 	min-height:100px;
 	width:872px;
@@ -55,7 +77,28 @@ p.space{
 	width:872px;
 	height:43px;
 }
-.center{
-	text-align:center;
-
+/*  navigation */
+#nav{
+	margin:34px 0;
+}
+.nav-card h2{margin:0; padding:0;}
+.nav-card {
+	float: left;
+	width: 420px;
+	margin: 0;
+	padding: 0 32px 0 0;
+}
+.nav-card-bg{
+	background:url(img/nav-card-bg.jpg) repeat-y;
+	width:420px;
+}
+.nav-card-top{
+	background:url(img/nav-card-top.jpg) no-repeat;
+	width:420px;
+	height:43px;
+}
+.nav-card-bot{
+	background:url(img/nav-card-bot.jpg) no-repeat;
+	width:420px;
+	height:43px;
 }

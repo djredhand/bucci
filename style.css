@@ -99,18 +99,20 @@ p.space{
 	height:43px;
 }
 /*  navigation */
-#nav{
-	margin:34px 0;
+ul#nav{
+	margin:34px 0;	
 }
 ul#nav  li{
 	cursor:pointer;
+	padding:0;
+	float:left;display:inline;
+
 }
 .nav-card h2{margin:0; padding:0;}
 .nav-card {
 	float: left;
 	width: 420px;
 	margin: 0;
-	padding: 0 32px 0 0;
 }
 .nav-card-bg{
 	background:url(img/nav-card-bg.jpg) repeat-y;
@@ -135,22 +137,28 @@ ul.grow li.title{
 	padding-right:15px;
 }
 ul.grow li{
-	display:inline-block;
+	display:block;
 	background:#CCC;
+	
 }
 #grasses{
 	text-align:left;
 	margin-left:50px;
+	float:left;
 }
 #shrubs{
 	text-align:left;
 	margin-left:50px;
-}
-#perennials{
-	text-align:left;
-	margin-right:50px;
+	float:left;
 }
 #trees{
 	text-align:left;
 	margin-right:50px;
+	float:right;
+}
+
+#perennials{
+	text-align:left;
+	margin-right:50px;
+	float:right;
 }

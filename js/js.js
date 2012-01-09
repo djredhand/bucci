@@ -9,22 +9,21 @@ $(document).ready(function() {
 		}											
 	});
 
-	$('#nav li').click(function(){
-		console.log($(this).children('a'));					  
-		var toLoad = $('#nav li a').attr('href')+' #content';
-		$('#content').fadeOut('slow',loadContent);
-		$('#load').remove();
-		$('#wrapper').append('<span id="load">LOADING...</span>');
-		$('#load').fadeIn('normal');
+	$('#nav li').click(function(){			  
+		var toLoad = $(this).children('a').attr('href')+' #content';
+		$('#content').fadeOut('fast',loadContent);
+		//$('#load').remove();
+		//$('#wrapper').append('<span id="load">LOADING...</span>');
+		//$('#load').fadeIn('normal');
 		window.location.hash = $(this).children('a').attr('href').substr(0,$(this).children('a').attr('href').length-5);
 		function loadContent() {
 			$('#content').load(toLoad,'',showNewContent())
 		}
 		function showNewContent() {
-			$('#content').fadeIn('fast',hideLoader());
+			$('#content').fadeIn('normal',hideLoader());
 		}
 		function hideLoader() {
-			$('#load').fadeOut('normal');
+			//$('#load').fadeOut('normal');
 		}
 		return false;
 		

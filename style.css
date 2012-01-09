@@ -2,8 +2,7 @@
 /* Sitewide styles */
 @font-face {
     font-family: 'Roman_';
-    src: url('font/roman.eot');
-    src: url('font/roman.eot?#iefix') format('embedded-opentype'),
+    src: url('font/roman.eot') format('embedded-opentype'),
          url('font/roman.woff') format('woff'),
          url('font/roman.ttf') format('truetype'),
          url('font/roman.svg#roman') format('svg');
@@ -21,6 +20,14 @@ body{
 .hidden{
 	visibility:hidden;
 	display:none;
+}
+a, a:active, a:link{
+	text-decoration:none;
+	color:#292929;
+}
+a, a:hover{
+	text-decoration:underline;
+	color:#292929;
 }
 ul {
 	margin: 25px 0 0 0;
@@ -55,12 +62,26 @@ p.space{
 .center{
 	text-align:center;
 }
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.clear{
+	clear:both;
+}
 
 /* main card*/
 
 #main-card {
 	margin: 25px auto 0 auto;
 
+}
+#main-card-bg{
+		background:url(img/main-card-bg.jpg) repeat-y;
+	min-height:100px;
+	width:872px;
 }
 #main-card-top{
 	background:url(img/main-card-top.jpg) no-repeat;
@@ -80,6 +101,9 @@ p.space{
 /*  navigation */
 #nav{
 	margin:34px 0;
+}
+ul#nav  li{
+	cursor:pointer;
 }
 .nav-card h2{margin:0; padding:0;}
 .nav-card {
@@ -101,4 +125,32 @@ p.space{
 	background:url(img/nav-card-bot.jpg) no-repeat;
 	width:420px;
 	height:43px;
+}
+/*Grow With Us*/
+
+ul.grow li.title{
+	font-size:32px;
+	font-weight:bold;
+	background: transparent;
+	padding-right:15px;
+}
+ul.grow li{
+	display:inline-block;
+	background:#CCC;
+}
+#grasses{
+	text-align:left;
+	margin-left:50px;
+}
+#shrubs{
+	text-align:left;
+	margin-left:50px;
+}
+#perennials{
+	text-align:left;
+	margin-right:50px;
+}
+#trees{
+	text-align:left;
+	margin-right:50px;
 }

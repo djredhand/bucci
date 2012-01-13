@@ -10,8 +10,8 @@ function init(){
 		if(hash==href.substr(0,href.length-5)){
 			var toLoad = hash+'.html #content';
 			$('#content').load(toLoad);
-			$.getScript('js/bulbs.js', function() {
-            bulbs();
+			$.getScript('js/box.js', function() {
+           box();
         });
 		}											
 	});
@@ -23,8 +23,8 @@ function init(){
 		
 		function loadContent() {
 			$('#content').load(toLoad,'',showNewContent() );
-			$.getScript('js/bulbs.js', function() {
-            bulbs();
+			$.getScript('js/box.js', function() {
+            box();
         });
 				
 		}

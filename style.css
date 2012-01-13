@@ -71,7 +71,13 @@ p.space{
 .clear{
 	clear:both;
 }
-
+.nav-card-content p {
+	float: left;
+	text-align: center;
+	width: 420px;
+	font-weight: 500;
+	color: #404040;
+}
 /* main card*/
 
 #main-card {
@@ -130,35 +136,26 @@ ul#nav  li{
 }
 /*Grow With Us*/
 
-ul.grow li.title{
-	font-size:32px;
-	font-weight:bold;
-	background: transparent;
-	padding-right:15px;
+ul.grow li.title {
+font-size: 32px;
+font-weight: bold;
+background: transparent;
+text-align: center;
 }
 ul.grow li{
 	display:block;
 	background:#CCC;
 	
 }
-#grasses{
-	text-align:left;
-	margin-left:50px;
-	float:left;
+#plants {
+	width: 872px;
+	text-align: center;
 }
-#shrubs{
-	text-align:left;
-	margin-left:50px;
-	float:left;
+.plants {
+	text-align: center;
+	display: inline-block;
+	width:160px;
 }
-#trees{
-	text-align:left;
-	margin-right:50px;
-	float:right;
-}
-
-#perennials{
-	text-align:left;
-	margin-right:50px;
-	float:right;
+.last{
+	margin-right: 0px !important;
 }

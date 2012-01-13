@@ -1,32 +1,50 @@
-$(document).ready(function() {
-						   
+jQuery(document).ready(function($) {
+function init(){	
+		$('.plants').click(function(){
+			alert('this')
+		});
+				   
 	var hash = window.location.hash.substr(1);
 	var href = $('#nav li a').each(function(){
 		var href = $(this).attr('href');
 		if(hash==href.substr(0,href.length-5)){
 			var toLoad = hash+'.html #content';
-			$('#content').load(toLoad)
+			$('#content').load(toLoad);
+			$.getScript('js/bulbs.js', function() {
+            bulbs();
+        });
 		}											
 	});
 
-	$('#nav li').click(function(){			  
+	$('#nav li').click(function(){		  
 		var toLoad = $(this).children('a').attr('href')+' #content';
 		$('#content').fadeOut('fast',loadContent);
-		//$('#load').remove();
-		//$('#wrapper').append('<span id="load">LOADING...</span>');
-		//$('#load').fadeIn('normal');
 		window.location.hash = $(this).children('a').attr('href').substr(0,$(this).children('a').attr('href').length-5);
+		
 		function loadContent() {
-			$('#content').load(toLoad,'',showNewContent())
+			$('#content').load(toLoad,'',showNewContent() );
+			$.getScript('js/bulbs.js', function() {
+            bulbs();
+        });
+				
 		}
+		
 		function showNewContent() {
 			$('#content').fadeIn('normal',hideLoader());
 		}
+		
 		function hideLoader() {
 			//$('#load').fadeOut('normal');
 		}
+		
 		return false;
 		
 	});
+	$('#bulbs').click(function(){
+		alert('hey')
+	});
+	console.log('nope')
+}
 
+init();
 });

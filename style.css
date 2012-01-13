@@ -145,8 +145,8 @@ text-align: center;
 ul.grow li{
 	display:block;
 	background:#CCC;
-	
 }
+img.plant-pic{width:150px; border: 5px solid #fff;}
 #plants {
 	width: 872px;
 	text-align: center;
@@ -159,3 +159,25 @@ ul.grow li{
 .last{
 	margin-right: 0px !important;
 }
+
+
+/*Box Styles*/
+#close{margin:0; padding:5px; float:right; color:#000; font-weight:bold; z-index:2; cursor:pointer;}
+
+#over{position: absolute; width:100%; height:100%; top:0; left:0; background:url(img/over-bg.png); z-index:1;}
+
+#box{background: #FFF;top: 225px;margin: 230px auto;z-index: 2;display: none;};
+
+
+
+
+
+
+
+
+
+
+
+
+
+

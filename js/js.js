@@ -40,10 +40,6 @@ function init(){
 		return false;
 		
 	});
-	$('#bulbs').click(function(){
-		alert('hey')
-	});
-	console.log('nope')
 }
 
 init();

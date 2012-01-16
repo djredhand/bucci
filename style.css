@@ -1,20 +1,11 @@
 @charset "utf-8";
 /* Sitewide styles */
-@font-face {
-    font-family: 'Roman_';
-    src: url('font/roman.eot') format('embedded-opentype'),
-         url('font/roman.woff') format('woff'),
-         url('font/roman.ttf') format('truetype'),
-         url('font/roman.svg#roman') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 html{
 	background:#4d85c5;
-	font-family:Roman_;
+	font-family:Arial, Helvetica, sans-serif;
 }
 body{ 
-	font-family:Roman_;
+	font-family:Arial, Helvetica, sans-serif;
 	color:#292929;
 }
 .hidden{
@@ -29,6 +20,7 @@ a, a:hover{
 	text-decoration:underline;
 	color:#292929;
 }
+a.home{text-decoration:underline;}
 ul {
 	margin: 25px 0 0 0;
 	padding: 0;
@@ -40,7 +32,7 @@ li{
 }
 h1, h2, p{
 	margin:0;
-	font-family:Roman_;
+	font-family:Arial, Helvetica, sans-serif;
 }
 h1{
 	padding: 20px 0 0 0;
@@ -48,7 +40,11 @@ h1{
 }
 h2{
 	padding: 30px 0 0 0;
-	font-size:30px; 
+	font-size:30px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+p{
+	font-family:Arial, Helvetica, sans-serif;
 }
 p.space{
 	padding: 30px 0 0 0;
@@ -135,6 +131,9 @@ ul#nav  li{
 	height:43px;
 }
 /*Grow With Us*/
+img.window{padding: 10px 30px 40px 30px;}
+
+ul.grow{cursor:pointer;}
 
 ul.grow li.title {
 font-size: 32px;
@@ -143,8 +142,7 @@ background: transparent;
 text-align: center;
 }
 ul.grow li{
-	display:block;
-	background:#CCC;
+	display:inline-block;
 }
 img.plant-pic{width:150px; border: 5px solid #fff;}
 #plants {

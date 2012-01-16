@@ -8,7 +8,7 @@ function init(){
 	var href = $('#nav li a').each(function(){
 		var href = $(this).attr('href');
 		if(hash==href.substr(0,href.length-5)){
-			var toLoad = hash+'.html #content';
+			var toLoad = hash + '.html #content';
 			$('#content').load(toLoad);
 			$.getScript('js/box.js', function() {
            box();

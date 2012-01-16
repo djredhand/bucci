@@ -19,6 +19,7 @@ function box(){
 						$("#box").append(this);
 						this.className = 'window';
 					}else{
+						// Handle the list elems if needed
 						//var s = document.createElement('span');
 						//$(s).append(this.childNodes);
 						//$("#box").append(s);					

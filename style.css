@@ -68,16 +68,16 @@ p.space{
 	clear:both;
 }
 .nav-card-content p {
-	float: left;
 	text-align: center;
 	width: 420px;
 	font-weight: 500;
 	color: #404040;
+	position:absolute;
 }
 /* main card*/
 
 #main-card {
-	margin: 25px auto 0 auto;
+	padding: 25px 0;
 
 }
 #main-card-bg{
@@ -153,6 +153,8 @@ img.plant-pic{width:150px; border: 5px solid #fff;}
 	text-align: center;
 	display: inline-block;
 	width:160px;
+	float:left;
+	padding-left:12px;
 }
 .last{
 	margin-right: 0px !important;

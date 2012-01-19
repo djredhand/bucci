@@ -1,7 +1,6 @@
 function box(){
-	$(document).ready(function(){
-		function init(){
-			$('div .plants').click(function(){
+			$('.plants').click(function(){
+				alert('clicked')
 				var list = $(this).children().children();
 				var pic = $(this).children().children().children('img');
 				var b = document.createElement('div');
@@ -42,8 +41,4 @@ function box(){
 				});
 			
 			})
-			
-		}//end init()
-init();
-	});
 }

@@ -1,4 +1,5 @@
 function box(){
+	$(document).ready(function(){
 		function init(){
 			$('div .plants').click(function(){
 				var list = $(this).children().children();
@@ -44,5 +45,5 @@ function box(){
 			
 		}//end init()
 init();
-	
+	});
 }

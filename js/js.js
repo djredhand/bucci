@@ -1,9 +1,5 @@
 jQuery(document).ready(function($) {
 function init(){	
-		$('.plants').click(function(){
-			alert('this')
-		});
-				   
 	var hash = window.location.hash.substr(1);
 	var href = $('#nav li a').each(function(){
 		var href = $(this).attr('href');
@@ -23,14 +19,13 @@ function init(){
 		
 		function loadContent() {
 			$('#content').load(toLoad,'',showNewContent() );
-			$.getScript('js/box.js', function() {
-            box();
-        });
-				
 		}
 		
 		function showNewContent() {
 			$('#content').fadeIn('normal',hideLoader());
+			$.getScript('js/box.js', function() {
+            box();
+        });
 		}
 		
 		function hideLoader() {

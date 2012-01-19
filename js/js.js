@@ -25,7 +25,6 @@ function init(){
 			$('#content').fadeIn('normal',hideLoader());
 			$.getScript('js/box.js', function() {
             box();
-						
         });
 		}
 		

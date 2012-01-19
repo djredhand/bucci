@@ -1,6 +1,5 @@
 function box(){
 			$('.plants').click(function(){
-				alert('clicked')
 				var list = $(this).children().children();
 				var pic = $(this).children().children().children('img');
 				var b = document.createElement('div');
@@ -19,11 +18,7 @@ function box(){
 						$("#box").append(this);
 						this.className = 'window';
 					}else{
-						// Handle the list elems if needed
-						//var s = document.createElement('span');
-						//$(s).append(this.childNodes);
-						//$("#box").append(s);					
-						//this.className = 'window';
+						return;
 					}
 				});
 				

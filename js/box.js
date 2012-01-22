@@ -1,5 +1,5 @@
 function box(){
-			$('.plants').click(function(){
+			$('.plants').on("click",function(event){
 				var list = $(this).children().children();
 				var pic = $(this).children().children().children('img');
 				var b = document.createElement('div');

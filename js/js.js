@@ -19,13 +19,11 @@ function init(){
 		
 		function loadContent() {
 			$('#content').load(toLoad,'',showNewContent() );
+			$.getScript('js/box.js');
 		}
 		
 		function showNewContent() {
 			$('#content').fadeIn('normal',hideLoader());
-			$.getScript('js/box.js', function() {
-            box();
-        });
 		}
 		
 		function hideLoader() {

@@ -1,5 +1,6 @@
-function box(){
-			$('.plants').on("click",function(event){
+$(document).ready(function(){
+$('.plants').each(function(){alert('plants are loadedx')})
+			$('.plants').click(function(){
 				var list = $(this).children().children();
 				var pic = $(this).children().children().children('img');
 				var b = document.createElement('div');
@@ -36,4 +37,4 @@ function box(){
 				});
 			
 			})
-}
+})

@@ -98,7 +98,7 @@ p.space{
 }
 #content{
 	background:url(img/main-card-bg.jpg) repeat-y;
-	min-height:100px;
+	min-height:500px;
 	width:872px;
 }
 #main-card-bot{

@@ -1,14 +1,13 @@
 $(document).ready(function(){
-$('.plants').each(function(){alert('plants are loadedx')})
 			$('.plants').click(function(){
 				var list = $(this).children().children();
 				var pic = $(this).children().children().children('img');
 				var b = document.createElement('div');
 				var x = document.createElement("div");
 				var over = document.createElement('div');
-				b.id = "box"
-				x.id = "close"
-				$(x).append("close - X")
+				b.id = "box";
+				x.id = "close";
+				$(x).append("close - X");
 				over.id = "over";
 				$('#content').append(over);
 				$('#over').append(b);
